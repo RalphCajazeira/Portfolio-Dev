@@ -1,31 +1,42 @@
 #intro {
   background-image: url(../assets/images/Background_Intro.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 100%;
   height: 750px;
-  object-fit: cover;
-  padding-top: 100px;
 
-  & #info header {
-    justify-items: center;
+  & #info {
+    margin: 120px 163px 183px;
     border: solid white;
-  }
+    text-align: center;
 
-  & #avatar {
-    justify-items: center;
-    & > img {
-      border: solid white;
-      width: 87px;
-      aspect-ratio: 1/1;
-      object-fit: cover;
+    & header {
+      margin-inline: 180px;
+      display: grid;
+      justify-items: center;
+    }
+
+    & p {
+      color: var(--base-gray-400);
     }
   }
+}
 
-  & #title {
-    font: 500 18px/120% var(--ff-inconsolata);
-    color: var(--base-gray-500);
+& #avatar {
+  justify-items: center;
+  & > img {
+    width: 87px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+}
 
-    & span {
-      color: var(--color-red);
-    }
+& #title {
+  font: 500 18px/120% var(--ff-inconsolata);
+  color: var(--base-gray-500);
+
+  & span {
+    color: var(--color-red);
   }
 }

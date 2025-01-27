@@ -1,0 +1,9 @@
+.text-lg-ag {
+  font: var(--text-title-lg);
+  color: var(--base-gray-600);
+}
+
+.text-sm {
+  font: var(--text-sm);
+  color: var(--base-gray-400);
+}

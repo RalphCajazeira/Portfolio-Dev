@@ -27,6 +27,14 @@
   --ff-maven: "Maven Pro", serif;
 
   --text-sub: 400 20px/120% var(--ff-inconsolata);
+  --text-title-lg: bold 56px/120% var(--ff-asap);
+  --text-sm: 400 14px/140% var(--ff-maven);
+}
+
+body {
+  max-width: 1366px;
+  margin-inline: auto;
+  background-color: var(--base-gray-200);
 }
 
 img {
