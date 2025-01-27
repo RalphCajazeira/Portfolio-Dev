@@ -25,8 +25,26 @@
   --ff-asap: "Asap", serif;
   --ff-inconsolata: "Inconsolata", serif;
   --ff-maven: "Maven Pro", serif;
+
+  --text-sub: 400 20px/120% var(--ff-inconsolata);
 }
 
 img {
   width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+
+.just-center {
+  justify-items: center;
 }

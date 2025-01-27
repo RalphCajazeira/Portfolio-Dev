@@ -1,0 +1,31 @@
+#intro {
+  background-image: url(../assets/images/Background_Intro.png);
+  width: 100%;
+  height: 750px;
+  object-fit: cover;
+  padding-top: 100px;
+
+  & #info header {
+    justify-items: center;
+    border: solid white;
+  }
+
+  & #avatar {
+    justify-items: center;
+    & > img {
+      border: solid white;
+      width: 87px;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
+  }
+
+  & #title {
+    font: 500 18px/120% var(--ff-inconsolata);
+    color: var(--base-gray-500);
+
+    & span {
+      color: var(--color-red);
+    }
+  }
+}
