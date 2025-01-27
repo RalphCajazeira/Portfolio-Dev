@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Principal */
+  --color-red: #e3646e;
+  --color-purple: #bb72e9;
+  --color-blue: #3996db;
+  --color-green: #82bc4f;
+  --color-yellow: #eabd5f;
+
+  /* Base */
+  --base-gray-100: #0d0e11;
+  --base-gray-200: #16181d;
+  --base-gray-300: #292c34;
+  --base-gray-400: #878ea1;
+  --base-gray-500: #c0c4ce;
+  --base-gray-600: #e2e4e9;
+
+  /* font */
+
+  --ff-asap: "Asap", serif;
+  --ff-inconsolata: "Inconsolata", serif;
+  --ff-maven: "Maven Pro", serif;
+}
+
+img {
+  width: 100%;
+}
