@@ -5,16 +5,19 @@
   height: 750px;
   display: grid;
   justify-items: center;
+  position: relative;
 
   #info {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 120px 163px 183px;
     text-align: center;
 
     header {
+      display: flex;
+      flex-direction: column;
       margin-inline: 180px;
-      display: grid;
-      justify-items: center;
 
       #avatar {
         img {
@@ -23,15 +26,17 @@
           aspect-ratio: 1;
           object-fit: cover;
           overflow: hidden;
+          margin-bottom: 56px;
         }
       }
 
       #title {
         font: 500 18px/120% var(--ff-inconsolata);
         color: var(--base-gray-500);
+        margin-bottom: 20px;
 
-        span {
-          color: var(--color-red);
+        h3 {
+          margin-bottom: 8px;
         }
       }
 
@@ -41,8 +46,6 @@
     }
 
     > nav {
-      align-content: end;
-
       ul {
         margin-inline: 143px;
         justify-content: center;
@@ -71,5 +74,10 @@
         }
       }
     }
+  }
+
+  > a {
+    position: absolute;
+    bottom: 57px;
   }
 }

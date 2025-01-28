@@ -35,7 +35,7 @@
 body {
   max-width: 1366px;
   margin-inline: auto;
-  background-color: var(--base-gray-200);
+  background-color: #29292e;
   font-family: var(--ff-asap);
   color: var(--base-gray-500);
 }

@@ -13,17 +13,24 @@
       href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Inconsolata:wght@200..900&family=Maven+Pro:wght@400..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/png" href="assets/Favicon.png" />
   </head>
   <body>
-    <section id="intro" class="grid">
-      <div id="info">
+    <section id="intro">
+      <article id="info">
         <header>
           <div id="avatar">
-            <img src="assets/images/profile.jpg" alt="" />
+            <img
+              src="assets/images/profile.jpg"
+              alt="Foto de perfil de Ralph Ramos"
+            />
           </div>
           <div>
             <div id="title">
-              <h3>Hello World! Meu nome é <span>Ralph Ramos</span> e sou</h3>
+              <h3>
+                Hello World! Meu nome é
+                <span class="tag-red">Ralph Ramos</span> e sou
+              </h3>
               <h1 class="text-lg-ag">Desenvolvedor Fullstack</h1>
             </div>
             <p class="text-sm">
@@ -34,47 +41,211 @@
             </p>
           </div>
         </header>
-        <nav>
+        <nav aria-label="Redes sociais e tecnologias">
           <ul class="flex">
             <li>
-              <a href="#">
-                <img src="assets/icons/GitHub.svg" alt="Icone GitHub" />
+              <a
+                href="https://github.com/RalphCajazeira"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="assets/icons/GitHub.svg" alt="Ícone GitHub" />
                 <span>GitHub</span>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="assets/icons/HTML.svg" alt="Icone HTML" />
+                <img src="assets/icons/HTML.svg" alt="Ícone HTML" />
                 <span>HTML</span>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="assets/icons/CSS.svg" alt="Icone CSS" />
+                <img src="assets/icons/CSS.svg" alt="Ícone CSS" />
                 <span>CSS</span>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="assets/icons/JavaScript.svg" alt="Icone JavaScript" />
+                <img src="assets/icons/JavaScript.svg" alt="Ícone JavaScript" />
                 <span>JavaScript</span>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="assets/icons/React.svg" alt="Icone React" />
+                <img src="assets/icons/React.svg" alt="Ícone React" />
                 <span>React</span>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="assets/icons/Node.js.svg" alt="Icone Node.js" />
+                <img src="assets/icons/Node.js.svg" alt="Ícone Node.js" />
                 <span>Node.js</span>
               </a>
             </li>
           </ul>
         </nav>
+      </article>
+      <a href="#projects">
+        <img src="assets/icons/CaretDoubleDown.svg" alt="Seta para Baixo" />
+      </a>
+    </section>
+
+    <section id="projects">
+      <header>
+        <h3 class="tag-red">Meu trabalho</h3>
+        <h2>Veja os projetos em destaque</h2>
+      </header>
+      <div class="cards">
+        <figure class="card">
+          <a href="#">
+            <img
+              src="assets/images/Thumbnail_Project-01.png"
+              alt="Print do Projeto Travelgram"
+            />
+            <figcaption>
+              <h3>Travelgram</h3>
+              <p>
+                Rede social onde as pessoas mostram os registros de suas viagens
+                pelo mundo
+              </p>
+            </figcaption>
+          </a>
+        </figure>
+        <figure class="card">
+          <a href="#">
+            <img
+              src="assets/images/Thumbnail_Project-02.png"
+              alt="Print do Projeto Tech News"
+            />
+            <figcaption>
+              <h3>Tech News</h3>
+              <p>
+                Homepage de um portal de notícias sobre a área de tecnologia
+              </p>
+            </figcaption>
+          </a>
+        </figure>
+        <figure class="card">
+          <a href="#">
+            <img
+              src="assets/images/Thumbnail_Project-03.png"
+              alt="Print do Projeto Página de receita"
+            />
+            <figcaption>
+              <h3>Página de receita</h3>
+              <p>Página com o passo a passo de uma receita para cupcakes</p>
+            </figcaption>
+          </a>
+        </figure>
+        <figure class="card">
+          <a href="#">
+            <img
+              src="assets/images/Thumbnail_Project-04.png"
+              alt="Print do Projeto Zingen"
+            />
+            <figcaption>
+              <h3>Zingen</h3>
+              <p>
+                Landing Page completa e responsiva de um aplicativo de Karaokê
+              </p>
+            </figcaption>
+          </a>
+        </figure>
+        <figure class="card">
+          <a href="#">
+            <img
+              src="assets/images/Thumbnail_Project-05.png"
+              alt="Print do Projeto Refund"
+            />
+            <figcaption>
+              <h3>Refund</h3>
+              <p>Um sistema para pedido e acompanhamento de reembolso</p>
+            </figcaption>
+          </a>
+        </figure>
+        <figure class="card">
+          <a href="#">
+            <img
+              src="assets/images/Thumbnail_Project-06.png"
+              alt="Print do Projeto Travelgram"
+            />
+            <figcaption>
+              <h3>Página de turismo</h3>
+              <p>
+                Página com as principais informações para quem quer viajar para
+                Busan
+              </p>
+            </figcaption>
+          </a>
+        </figure>
       </div>
     </section>
+
+    <section id="services">
+      <header>
+        <h3 class="tag-red">Meus serviços</h3>
+        <h2>Como posso ajudar o seu negócio</h2>
+      </header>
+
+      <div class="cards grid grid-flow-col">
+        <figure>
+          <img src="assets/icons/Devices.svg" alt="" />
+          <figcaption>
+            <h3>Websites e Aplicativos</h3>
+            <p>Desenvolvimento de interfaces</p>
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="assets/icons/HardDrives.svg" alt="" />
+          <figcaption>
+            <h3>API e banco de dados</h3>
+            <p>Criação de serviços do sistema</p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img src="assets/icons/Infinity.svg" alt="" />
+          <figcaption>
+            <h3>DevOps</h3>
+            <p>Gestão e infraestrutura da aplicação</p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <footer>
+      <header>
+        <h3 class="tag-purple">Contato</h3>
+        <h2>Gostou do meu trabalho?</h2>
+        <p>Entre em contato ou acompanhe as minhas redes sociais!</p>
+      </header>
+      <div>
+        <ul>
+          <li>
+            <a href="#">
+              <img src="assets/icons/LinkedinLogo.svg" alt="" />
+              <span>Linkedin</span>
+              <img src="assets/icons/ArrowUpRight.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="assets/icons/InstagramLogo.svg" alt="" />
+              <span>Instagram</span>
+              <img src="assets/icons/ArrowUpRight.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="assets/icons/GithubLogo.svg" alt="" />
+              <span>GitHub</span>
+              <img src="assets/icons/ArrowUpRight.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="assets/icons/EnvelopeSimple.svg" alt="" />
+              <span>E-mail</span>
+              <img src="assets/icons/ArrowUpRight.svg" alt="" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

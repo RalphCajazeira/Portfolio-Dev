@@ -7,3 +7,22 @@
   font: var(--text-sm);
   color: var(--base-gray-400);
 }
+
+.tag-red {
+  font: var(--text-sub);
+  color: var(--color-red);
+}
+.tag-purple {
+  font: var(--text-sub);
+  color: var(--color-purple);
+}
+
+.gap-8 {
+  gap: 8px;
+}
+.gap-16 {
+  gap: 16px;
+}
+.gap-24 {
+  gap: 24px;
+}
