@@ -58,7 +58,7 @@
           border-radius: 999px;
           padding: 8px 16px;
 
-          a {
+          div {
             display: flex;
             justify-content: center;
             align-items: center;
