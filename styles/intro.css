@@ -1,42 +1,75 @@
 #intro {
-  background-image: url(../assets/images/Background_Intro.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: url(../assets/images/Background_Intro.png) no-repeat center /
+    cover;
   width: 100%;
   height: 750px;
+  display: grid;
+  justify-items: center;
 
-  & #info {
+  #info {
+    display: grid;
     margin: 120px 163px 183px;
-    border: solid white;
     text-align: center;
 
-    & header {
+    header {
       margin-inline: 180px;
       display: grid;
       justify-items: center;
+
+      #avatar {
+        img {
+          width: 87px;
+          border-radius: 50%;
+          aspect-ratio: 1;
+          object-fit: cover;
+          overflow: hidden;
+        }
+      }
+
+      #title {
+        font: 500 18px/120% var(--ff-inconsolata);
+        color: var(--base-gray-500);
+
+        span {
+          color: var(--color-red);
+        }
+      }
+
+      p {
+        color: var(--base-gray-400);
+      }
     }
 
-    & p {
-      color: var(--base-gray-400);
+    > nav {
+      align-content: end;
+
+      ul {
+        margin-inline: 143px;
+        justify-content: center;
+        gap: 16px;
+
+        li {
+          display: flex;
+          color: var(--base-gray-500);
+          background-color: var(--base-gray-300);
+          border-radius: 999px;
+          padding: 8px 16px;
+
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            font: var(--text-md);
+
+            img {
+              width: 24px;
+              aspect-ratio: 1;
+              object-fit: cover;
+            }
+          }
+        }
+      }
     }
-  }
-}
-
-& #avatar {
-  justify-items: center;
-  & > img {
-    width: 87px;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-  }
-}
-
-& #title {
-  font: 500 18px/120% var(--ff-inconsolata);
-  color: var(--base-gray-500);
-
-  & span {
-    color: var(--color-red);
   }
 }

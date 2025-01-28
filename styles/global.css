@@ -5,14 +5,14 @@
 }
 
 :root {
-  /* Principal */
+  /* Cores principais */
   --color-red: #e3646e;
   --color-purple: #bb72e9;
   --color-blue: #3996db;
   --color-green: #82bc4f;
   --color-yellow: #eabd5f;
 
-  /* Base */
+  /* Tons de cinza */
   --base-gray-100: #0d0e11;
   --base-gray-200: #16181d;
   --base-gray-300: #292c34;
@@ -20,14 +20,15 @@
   --base-gray-500: #c0c4ce;
   --base-gray-600: #e2e4e9;
 
-  /* font */
+  /* Fontes */
+  --ff-asap: "Asap", sans-serif;
+  --ff-inconsolata: "Inconsolata", monospace;
+  --ff-maven: "Maven Pro", sans-serif;
 
-  --ff-asap: "Asap", serif;
-  --ff-inconsolata: "Inconsolata", serif;
-  --ff-maven: "Maven Pro", serif;
-
+  /* Textos */
   --text-sub: 400 20px/120% var(--ff-inconsolata);
   --text-title-lg: bold 56px/120% var(--ff-asap);
+  --text-md: 400 16px/140% var(--ff-maven);
   --text-sm: 400 14px/140% var(--ff-maven);
 }
 
@@ -35,10 +36,13 @@ body {
   max-width: 1366px;
   margin-inline: auto;
   background-color: var(--base-gray-200);
+  font-family: var(--ff-asap);
+  color: var(--base-gray-500);
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .flex {
@@ -55,4 +59,13 @@ img {
 
 .just-center {
   justify-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
 }
